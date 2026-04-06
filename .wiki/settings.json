@@ -1,0 +1,60 @@
+{
+  "selected_provider": "openai",
+  "provider_mode": "subscription",
+  "selected_subscription_provider": "codex-cli",
+  "selected_api_provider": "openai",
+  "default_execution_mode": "direct-edit",
+  "inbox": {
+    "enabled": true,
+    "imap_host": "imap.gmail.com",
+    "imap_port": 993,
+    "imap_username": "thesawhneysph3@gmail.com",
+    "imap_folder": "INBOX",
+    "allowed_senders": [
+      "thesawhneysph3@gmail.com"
+    ],
+    "sync_on_startup": true
+  },
+  "providers": [
+    {
+      "id": "claude-code-cli",
+      "label": "Claude Code",
+      "kind": "claude-code-cli",
+      "base_url": null,
+      "model": "sonnet",
+      "supports_embeddings": false
+    },
+    {
+      "id": "codex-cli",
+      "label": "Codex",
+      "kind": "codex-cli",
+      "base_url": null,
+      "model": "GPT-5.4 Mini",
+      "supports_embeddings": false
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI",
+      "kind": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-5.4-mini",
+      "supports_embeddings": true
+    },
+    {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "kind": "anthropic",
+      "base_url": "https://api.anthropic.com/v1",
+      "model": "claude-3-7-sonnet-latest",
+      "supports_embeddings": false
+    },
+    {
+      "id": "openai-compatible",
+      "label": "OpenAI-Compatible",
+      "kind": "openai-compatible",
+      "base_url": "http://localhost:11434/v1",
+      "model": "llama3.1",
+      "supports_embeddings": false
+    }
+  ]
+}
